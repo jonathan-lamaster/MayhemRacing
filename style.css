@@ -1,0 +1,122 @@
+body{
+	padding: 0;
+	margin: 0;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+.clear{
+	clear: both;
+}
+
+#navBar{
+	height: 60px;
+	width: 100%;
+	background:
+	linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+	linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+	linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+	linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+	linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+	linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+	background-color: #131313;
+	background-size: 20px 20px;
+	border-bottom: 2px solid #EFFF65;
+}
+
+#teamLogo{
+	height: 40px;
+	border-radius: 5px;
+	margin: 5px 0 5px 5px;
+}
+
+#BigTeamLogo{
+	position: relative;
+	height: 150px;
+	border-radius: 25px;
+	margin: -30px 0 0 50px;
+	z-index: 500;
+}
+
+#navTab{
+	float: right;
+	color: #0064AB;
+	height: 40px;
+	width: 100px;
+	background-color: #333333;
+	border-left:2px solid #EFFF65; 
+	border-top:2px solid #EFFF65;
+	border-right:2px solid #EFFF65;
+	border-bottom:2px solid #333333;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	margin: 18px 30px 0 0;
+	text-align: center;
+}
+
+#navTab p{
+padding: 8;
+margin: 0;
+font-size: 1.2em;
+}
+
+#banner{
+	background-image: url("images/banner.jpg");
+	height: 300px;
+	width: 100%;
+	background-size: cover;
+}
+
+#pb{
+	text-align: center;
+	padding: 10px 0 10px 0;
+}
+
+#abcAuto{
+	padding-top: 65px;
+}
+
+.boldName{
+	font-size: 1.1em;
+}
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+	height: 350px;
+	text-align: center;
+	
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF THREE  */
+.span_3_of_3 { width: 100%; }
+.span_2_of_3 { width: 66.13%; }
+.span_1_of_3 { width: 32.26%; }
+
+@media screen and (max-width: 1000px){
+	#BigTeamLogo{
+		visibility: hidden;
+	}
+}
+
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+}

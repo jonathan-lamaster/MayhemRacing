@@ -1,0 +1,126 @@
+body{
+	padding: 0;
+	margin: 0;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+.clear{
+	clear: both;
+}
+
+.container{
+	width: 85%;
+	margin: 0 auto;
+}
+
+#teamLogo{
+	height: 40px;
+	border-radius: 5px;
+	margin: 5px 0 5px 5px;
+}
+
+#BigTeamLogo{
+	position: relative;
+	height: 150px;
+	border-radius: 25px;
+	margin: -30px 0 0 50px;
+	z-index: 500;
+}
+
+
+#banner{
+	background-image: url("images/banner.jpg");
+	height: 200px;
+	width: 100%;
+	background-size: cover;
+}
+
+.topCap{
+	height: 50px;
+	background:
+	linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+	linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+	linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+	linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+	linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+	linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+	background-color: #131313;
+	background-size: 20px 20px;
+	border-top: 3px solid #EFFF65;
+	border-bottom: 4px solid #0064AB;
+}
+
+#topCapHeader{
+color:#0064AB;
+float: left;
+margin-top: -10px;
+margin-left: 50px;
+}
+
+.memberProfile{
+	height: 300px;
+	padding: 20px;
+	text-align: center;
+	background-color: #dddddd ;
+	border-radius: 10px;
+}
+
+
+.memberProfile p{
+	padding-left: 10px;
+	display: inline-block;
+	font-size: 1.2em;
+}
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF FOUR  */
+.span_4_of_4 {
+	width: 100%;
+}
+.span_3_of_4 {
+	width: 74.6%;
+}
+.span_2_of_4 {
+	width: 49.2%;
+}
+.span_1_of_4 {
+	width: 23.8%;
+}
+
+@media screen and (max-width: 1000px){
+	#BigTeamLogo{
+		visibility: hidden;
+	}
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_1_of_4, .span_2_of_4, .span_3_of_4, .span_4_of_4 { width: 100%; }
+	.container{width: 100%; margin: 0 auto;}
+	#topCapHeader{
+		color:#0064AB;
+		}
+	
+
+}
